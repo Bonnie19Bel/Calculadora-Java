@@ -29,6 +29,18 @@ public class CalculadoraGUI {
 
         // Adicionando o título ao painel
         painel.add(titulo, BorderLayout.NORTH);
+        // Criando o visor
+JTextField visor = new JTextField("0");
+
+visor.setFont(new Font("Arial", Font.BOLD, 36));
+visor.setForeground(Color.WHITE);
+visor.setBackground(new Color(35, 35, 35));
+
+visor.setHorizontalAlignment(SwingConstants.RIGHT);
+visor.setEditable(false);
+
+// Adicionando o visor ao painel
+painel.add(visor, BorderLayout.CENTER);
 
         // Adicionando o painel à janela
         janela.setContentPane(painel);
